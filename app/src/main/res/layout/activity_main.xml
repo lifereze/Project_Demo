@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_background"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/smallmargin"
+        app:cardCornerRadius="@dimen/largemargin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/smallpadding">
+
+            <ImageView
+                android:id="@+id/ivprofile"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="@dimen/mediummargin"
+                android:background="@drawable/roundshape"
+                android:padding="@dimen/largepadding"
+                android:src="@drawable/mercindes"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvusername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="68dp"
+                android:background="@drawable/textview_shape2"
+                android:gravity="center"
+                android:text="Gold"
+                android:textColor="@color/white"
+                android:textSize="@dimen/mediumTextSize"
+                app:layout_constraintBottom_toBottomOf="@+id/ivprofile"
+                app:layout_constraintStart_toStartOf="@+id/ivprofile"
+                app:layout_constraintTop_toTopOf="@+id/ivprofile"
+                app:layout_constraintVertical_bias="0.59" />
+
+
+            <TextView
+                android:id="@+id/tvaed2450"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/smallpadding"
+                android:text="AED"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="@dimen/mediumTextSize"
+                app:layout_constraintBottom_toBottomOf="@+id/tv2450"
+                app:layout_constraintEnd_toStartOf="@+id/tv2450"
+                app:layout_constraintTop_toTopOf="@+id/tv2450"
+                app:layout_constraintVertical_bias="0.7" />
+
+            <TextView
+                android:id="@+id/tv2450"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2,450"
+                android:textColor="@color/black"
+                android:textSize="@dimen/verylargeTextSize"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/ivaed2450"
+                app:layout_constraintEnd_toStartOf="@+id/ivaed2450"
+                app:layout_constraintTop_toTopOf="@+id/ivaed2450" />
+
+            <ImageView
+                android:id="@+id/ivaed2450"
+                android:layout_width="37dp"
+                android:layout_height="28dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/textview_shape"
+                android:backgroundTint="@color/blue"
+                android:src="@drawable/plus"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ivCivic"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:padding="@dimen/smallpadding"
+                android:src="@drawable/civic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivprofile" />
+
+            <TextView
+                android:id="@+id/tvcivic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Civic Type R 2019"
+                android:textColor="@color/black"
+                android:textSize="@dimen/verylargeTextSize"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivCivic" />
+
+            <TextView
+                android:id="@+id/tvhonda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Honda"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/mediumTextSize"
+                app:layout_constraintStart_toStartOf="@+id/tvcivic"
+                app:layout_constraintTop_toBottomOf="@+id/tvcivic" />
+
+            <TextView
+                android:id="@+id/tvmygarage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="68dp"
+                android:text="My Garage"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/mediumTextSize"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tvcivic"
+                app:layout_constraintTop_toBottomOf="@+id/ivCivic" />
+
+            <ImageView
+                android:id="@+id/ivgarage"
+                android:layout_width="37dp"
+                android:layout_height="19dp"
+                android:src="@drawable/arrow"
+                app:layout_constraintBottom_toBottomOf="@+id/tvmygarage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/tvmygarage"
+                app:layout_constraintTop_toTopOf="@+id/tvmygarage"
+                app:layout_constraintVertical_bias="0.6" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="@dimen/smallmargin"
+        android:layout_marginTop="@dimen/largemargin"
+        android:layout_marginEnd="@dimen/smallmargin"
+        android:backgroundTint="@color/blue"
+        app:cardCornerRadius="@dimen/largemargin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/tvavailablecars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="30dp"
+                android:padding="@dimen/smallpadding"
+                android:text="Available Cars"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvlongtermshortterm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/smallmargin"
+                android:text="Long Term, Short Term"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="@+id/tvavailablecars"
+                app:layout_constraintTop_toBottomOf="@+id/tvavailablecars" />
+
+            <ImageView
+                android:id="@+id/ivsecondArrow"
+                android:layout_width="55dp"
+                android:layout_height="35dp"
+                android:layout_margin="@dimen/largemargin"
+                android:background="@drawable/textview_shape"
+                android:src="@drawable/arrow"
+
+                app:cornerRadius="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvtopdeals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/mediummargin"
+        android:text="Top Deals"
+        android:textColor="@color/black1"
+        android:textSize="@dimen/verylargeTextSize"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="@+id/cardView2"
+        app:layout_constraintStart_toStartOf="@+id/cardView2"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3" />
+
+    <TextView
+        android:id="@+id/tvmore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="more"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/largeTextSize"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvtopdeals"
+        app:layout_constraintEnd_toEndOf="@+id/lastCardView"
+        app:layout_constraintTop_toTopOf="@+id/tvtopdeals" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="170dp"
+        android:layout_height="178dp"
+        android:layout_margin="@dimen/mediummargin"
+        android:background="@color/ghostwhite"
+        app:cardCornerRadius="@dimen/mediummargin"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivcar2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/mediummargin"
+                android:padding="@dimen/largepadding"
+                android:src="@drawable/mercindes"
+                app:layout_constraintBottom_toTopOf="@+id/car2text"
+                app:layout_constraintEnd_toStartOf="@+id/tvcartextduration"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvcartextduration"
+                android:layout_width="45dp"
+                android:layout_height="18dp"
+                android:layout_margin="@dimen/mediummargin"
+                android:background="@drawable/textview_shape"
+                android:backgroundTint="@color/black1"
+                android:text="Monthly"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/mediumTextSize"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/car2text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/mediummargin"
+                android:text="Civic Type R 2019"
+                android:textColor="@color/black"
+                android:textSize="@dimen/largeTextSize"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/tvcartextsub"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tvcartextsub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/mediummargin"
+                android:text="Civic Type R 2019"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mediumTextSize"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/lastCardView"
+        android:layout_width="170dp"
+        android:layout_height="178dp"
+        android:layout_margin="@dimen/mediummargin"
+        android:background="@color/ghostwhite"
+        app:cardCornerRadius="@dimen/mediummargin"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cardView2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivcar22"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/mediummargin"
+                android:padding="@dimen/largepadding"
+                android:src="@drawable/mercindes"
+                app:layout_constraintBottom_toTopOf="@+id/car2text2"
+                app:layout_constraintEnd_toStartOf="@+id/tvcartextduration2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvcartextduration2"
+                android:layout_width="45dp"
+                android:layout_height="18dp"
+                android:layout_margin="@dimen/mediummargin"
+                android:background="@drawable/textview_shape"
+                android:backgroundTint="@color/black1"
+                android:gravity="center"
+                android:text="Daily"
+                android:textColor="@color/white"
+                android:textSize="@dimen/mediumTextSize"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/car2text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/mediummargin"
+                android:text="Civic Type R 2019"
+                android:textColor="@color/black"
+                android:textSize="@dimen/largeTextSize"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/tvcartextsub2"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tvcartextsub2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/mediummargin"
+                android:text="Civic Type R 2019"
+                android:textColor="@color/black"
+                android:textSize="@dimen/mediumTextSize"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
